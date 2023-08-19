@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <link rel="stylesheet" href="./css/style-impresao.css" media="print">
+    <link rel="stylesheet" href="./css/style-tela.css" media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>NOTICIAS</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <nav id="itens">
+            <ul>
+                <li><a href="https://ge.globo.com/ce/" target="_blank">esporte</a></li>
+                <li><a href="#">tecnologia</a></li>
+                <li><a href="#">extras</a></li>
+                <li><a href="#">mais noticia</a></li>
+                <li><a href="#">contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>noticia atualizadas</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus veritatis ad dolore corrupti quidem suscipit, enim consequuntur, veniam nisi molestias earum! Assumenda soluta mollitia delectus enim consectetur nisi quo.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae blanditiis quisquam vel doloribus repellat eligendi quam, fugiat asperiores vero, deserunt possimus enim aperiam placeat. Saepe dolore cupiditate explicabo aut eos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus veritatis ad dolore corrupti quidem suscipit, enim consequuntur, veniam nisi molestias earum! Assumenda soluta mollitia delectus enim consectetur nisi quo.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae blanditiis quisquam vel doloribus repellat eligendi quam, fugiat asperiores vero, deserunt possimus enim aperiam placeat. Saepe dolore cupiditate explicabo aut eos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus veritatis ad dolore corrupti quidem suscipit, enim consequuntur, veniam nisi molestias earum! Assumenda soluta mollitia delectus enim consectetur nisi quo.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae blanditiis quisquam vel doloribus repellat eligendi quam, fugiat asperiores vero, deserunt possimus enim aperiam placeat. Saepe dolore cupiditate explicabo aut eos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus veritatis ad dolore corrupti quidem suscipit, enim consequuntur, veniam nisi molestias earum! Assumenda soluta mollitia delectus enim consectetur nisi quo.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae blanditiis quisquam vel doloribus repellat eligendi quam, fugiat asperiores vero, deserunt possimus enim aperiam placeat. Saepe dolore cupiditate explicabo aut eos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus veritatis ad dolore corrupti quidem suscipit, enim consequuntur, veniam nisi molestias earum! Assumenda soluta mollitia delectus enim consectetur nisi quo.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae blanditiis quisquam vel doloribus repellat eligendi quam, fugiat asperiores vero, deserunt possimus enim aperiam placeat. Saepe dolore cupiditate explicabo aut eos!
+            </p>
+            
+            
+
+        </article>
+    </main>
+    <footer>
+        site criado por Evenilson <br>
+        Dev.Front-End <br>
+        &copy2023
+    </footer>
+    <script>
+        
+        function clickMenu(){
+            if(itens.style.display=== 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+           
+            
+        }
+    </script>
+    <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+    
+</body>
+</html>
